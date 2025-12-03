@@ -100,134 +100,106 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/12/03/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B-1/" data-id="cmiq46bpb00001olzdmwvba96" data-title="hexo使用教程" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hexo使用教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/12/03/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="article-date">
-  <time class="dt-published" datetime="2025-12-03T14:39:37.693Z" itemprop="datePublished">2025-12-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
         <table>
 <thead>
 <tr>
-<th>指令</th>
-<th>完整格式</th>
-<th>核心作用</th>
-<th>适用场景</th>
-<th>补充说明</th>
+<th align="left">指令</th>
+<th align="left">完整格式</th>
+<th align="left">核心作用</th>
+<th align="left">适用场景</th>
+<th align="left">补充说明</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><code>npx hexo init</code></td>
-<td><code>npx hexo init [文件夹名]</code></td>
-<td>初始化 Hexo 博客项目</td>
-<td>首次创建博客时</td>
-<td>1. 不指定文件夹名则在当前目录初始化；2. 要求目标目录为空（非空需先备份删除文件）；3. 自动生成 <code>_config.yml</code>、<code>source</code>、<code>themes</code> 等核心文件</td>
+<td align="left"><code>npx hexo init</code></td>
+<td align="left"><code>npx hexo init [文件夹名]</code></td>
+<td align="left">初始化 Hexo 博客项目</td>
+<td align="left">首次创建博客时</td>
+<td align="left">1. 不指定文件夹名则在当前目录初始化；2. 要求目标目录为空（非空需先备份删除文件）；3. 自动生成 <code>_config.yml</code>、<code>source</code>、<code>themes</code> 等核心文件</td>
 </tr>
 <tr>
-<td><code>npx hexo init --force</code></td>
-<td>-</td>
-<td>强制在非空目录初始化</td>
-<td>需重建核心文件（如 <code>package.json</code> 丢失）</td>
-<td>仅覆盖核心依赖文件，不删除 <code>_config.yml</code>、<code>source</code> 等配置 &#x2F; 文章内容（部分版本可能不支持，需谨慎使用）</td>
+<td align="left"><code>npx hexo init --force</code></td>
+<td align="left">-</td>
+<td align="left">强制在非空目录初始化</td>
+<td align="left">需重建核心文件（如 <code>package.json</code> 丢失）</td>
+<td align="left">仅覆盖核心依赖文件，不删除 <code>_config.yml</code>、<code>source</code> 等配置 &#x2F; 文章内容（部分版本可能不支持，需谨慎使用）</td>
 </tr>
 <tr>
-<td><code>npm install</code></td>
-<td>-</td>
-<td>安装项目依赖</td>
-<td>1. 初始化项目后；2. 复制他人项目后；3. 依赖丢失 &#x2F; 冲突后</td>
-<td>读取 <code>package.json</code> 中的依赖清单，自动下载到 <code>node_modules</code> 文件夹</td>
+<td align="left"><code>npm install</code></td>
+<td align="left">-</td>
+<td align="left">安装项目依赖</td>
+<td align="left">1. 初始化项目后；2. 复制他人项目后；3. 依赖丢失 &#x2F; 冲突后</td>
+<td align="left">读取 <code>package.json</code> 中的依赖清单，自动下载到 <code>node_modules</code> 文件夹</td>
 </tr>
 <tr>
-<td><code>npm install [插件名] --save</code></td>
-<td>-</td>
-<td>安装 Hexo 插件</td>
-<td>需要扩展功能时（如部署、评论）</td>
-<td>示例：<code>npm install hexo-deployer-git --save</code>（安装 Git 部署插件），安装后自动更新 <code>package.json</code> 依赖清单</td>
+<td align="left"><code>npm install [插件名] --save</code></td>
+<td align="left">-</td>
+<td align="left">安装 Hexo 插件</td>
+<td align="left">需要扩展功能时（如部署、评论）</td>
+<td align="left">示例：<code>npm install hexo-deployer-git --save</code>（安装 Git 部署插件），安装后自动更新 <code>package.json</code> 依赖清单</td>
 </tr>
 <tr>
-<td><code>npx hexo g</code></td>
-<td><code>npx hexo generate</code></td>
-<td>生成静态博客文件</td>
-<td>发布前构建博客内容</td>
-<td>1. 把 Markdown 文章、主题模板编译为 HTML&#x2F;CSS&#x2F;JS；2. 生成的文件存于 <code>public</code> 文件夹；3. 后续部署的核心素材来源</td>
+<td align="left"><code>npx hexo g</code></td>
+<td align="left"><code>npx hexo generate</code></td>
+<td align="left">生成静态博客文件</td>
+<td align="left">发布前构建博客内容</td>
+<td align="left">1. 把 Markdown 文章、主题模板编译为 HTML&#x2F;CSS&#x2F;JS；2. 生成的文件存于 <code>public</code> 文件夹；3. 后续部署的核心素材来源</td>
 </tr>
 <tr>
-<td><code>npx hexo d</code></td>
-<td><code>npx hexo deploy</code></td>
-<td>部署静态文件到服务器</td>
-<td>生成文件后发布到线上</td>
-<td>1. 需先在 <code>_config.yml</code> 配置 <code>deploy</code> 信息（如 GitHub 仓库）；2. 依赖对应部署插件（如 <code>hexo-deployer-git</code>）；3. 自动推送 <code>public</code> 文件夹内容到目标平台（如 GitHub Pages）</td>
+<td align="left"><code>npx hexo d</code></td>
+<td align="left"><code>npx hexo deploy</code></td>
+<td align="left">部署静态文件到服务器</td>
+<td align="left">生成文件后发布到线上</td>
+<td align="left">1. 需先在 <code>_config.yml</code> 配置 <code>deploy</code> 信息（如 GitHub 仓库）；2. 依赖对应部署插件（如 <code>hexo-deployer-git</code>）；3. 自动推送 <code>public</code> 文件夹内容到目标平台（如 GitHub Pages）</td>
 </tr>
 <tr>
-<td><code>npx hexo g &amp;&amp; npx hexo d</code></td>
-<td>-</td>
-<td>生成 + 部署一键执行</td>
-<td>快速发布博客更新</td>
-<td><code>&amp;&amp;</code> 表示前一个命令执行成功后自动执行下一个，避免手动分步操作</td>
+<td align="left"><code>npx hexo g &amp;&amp; npx hexo d</code></td>
+<td align="left">-</td>
+<td align="left">生成 + 部署一键执行</td>
+<td align="left">快速发布博客更新</td>
+<td align="left"><code>&amp;&amp;</code> 表示前一个命令执行成功后自动执行下一个，避免手动分步操作</td>
 </tr>
 <tr>
-<td><code>npx hexo s</code></td>
-<td><code>npx hexo server</code></td>
-<td>启动本地预览服务器</td>
-<td>编写文章 &#x2F; 修改主题后预览效果</td>
-<td>1. 默认访问地址：<code>http://localhost:4000</code>；2. 实时刷新内容（修改文章 &#x2F; 配置后无需重启，刷新浏览器即可）</td>
+<td align="left"><code>npx hexo s</code></td>
+<td align="left"><code>npx hexo server</code></td>
+<td align="left">启动本地预览服务器</td>
+<td align="left">编写文章 &#x2F; 修改主题后预览效果</td>
+<td align="left">1. 默认访问地址：<code>http://localhost:4000</code>；2. 实时刷新内容（修改文章 &#x2F; 配置后无需重启，刷新浏览器即可）</td>
 </tr>
 <tr>
-<td><code>npx hexo new [文章标题]</code></td>
-<td><code>npx hexo new &quot;我的第一篇博客&quot;</code></td>
-<td>创建新博客文章</td>
-<td>撰写新内容时</td>
-<td>1. 文章默认生成在 <code>source/_posts</code> 文件夹；2. 格式为 Markdown（<code>.md</code> 文件）；3. 自动生成文章头部信息（标题、日期、分类等）</td>
+<td align="left"><code>npx hexo new [文章标题]</code></td>
+<td align="left"><code>npx hexo new &quot;我的第一篇博客&quot;</code></td>
+<td align="left">创建新博客文章</td>
+<td align="left">撰写新内容时</td>
+<td align="left">1. 文章默认生成在 <code>source/_posts</code> 文件夹；2. 格式为 Markdown（<code>.md</code> 文件）；3. 自动生成文章头部信息（标题、日期、分类等）</td>
 </tr>
 <tr>
-<td><code>npx hexo new page [页面名]</code></td>
-<td><code>npx hexo new page &quot;about&quot;</code></td>
-<td>创建独立页面</td>
-<td>需要添加 “关于我”“分类” 等页面时</td>
-<td>1. 页面生成在 <code>source/[页面名]</code> 文件夹；2. 适用于创建非文章类静态页面（如导航栏菜单页面）</td>
+<td align="left"><code>npx hexo new page [页面名]</code></td>
+<td align="left"><code>npx hexo new page &quot;about&quot;</code></td>
+<td align="left">创建独立页面</td>
+<td align="left">需要添加 “关于我”“分类” 等页面时</td>
+<td align="left">1. 页面生成在 <code>source/[页面名]</code> 文件夹；2. 适用于创建非文章类静态页面（如导航栏菜单页面）</td>
 </tr>
 <tr>
-<td><code>npx hexo clean</code></td>
-<td>-</td>
-<td>清理生成的静态文件</td>
-<td>部署失败 &#x2F; 内容更新不生效时</td>
-<td>1. 删除 <code>public</code> 文件夹和缓存文件；2. 解决 “修改内容后预览 &#x2F; 部署无变化” 的缓存问题，清理后需重新执行 <code>hexo g</code> 生成</td>
+<td align="left"><code>npx hexo clean</code></td>
+<td align="left">-</td>
+<td align="left">清理生成的静态文件</td>
+<td align="left">部署失败 &#x2F; 内容更新不生效时</td>
+<td align="left">1. 删除 <code>public</code> 文件夹和缓存文件；2. 解决 “修改内容后预览 &#x2F; 部署无变化” 的缓存问题，清理后需重新执行 <code>hexo g</code> 生成</td>
 </tr>
 <tr>
-<td><code>hexo -v</code></td>
-<td>-</td>
-<td>查看 Hexo 版本</td>
-<td>排查版本兼容问题时</td>
-<td>需全局安装 Hexo（<code>npm install -g hexo-cli</code>）后才能直接使用，否则需用 <code>npx hexo -v</code></td>
+<td align="left"><code>hexo -v</code></td>
+<td align="left">-</td>
+<td align="left">查看 Hexo 版本</td>
+<td align="left">排查版本兼容问题时</td>
+<td align="left">需全局安装 Hexo（<code>npm install -g hexo-cli</code>）后才能直接使用，否则需用 <code>npx hexo -v</code></td>
 </tr>
 </tbody></table>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/12/03/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" data-id="cmiq46bpf00011olzhk13b1tc" data-title="" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2025/12/03/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B-1/" data-id="cmiq4apoy0000pklzgjax8rni" data-title="hexo使用教程" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -322,10 +294,6 @@
         
           <li>
             <a href="/2025/12/03/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B-1/">hexo使用教程</a>
-          </li>
-        
-          <li>
-            <a href="/2025/12/03/hexo%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">(no title)</a>
           </li>
         
           <li>
