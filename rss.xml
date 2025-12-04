@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>欢迎</title>
+        <link>http://example.com</link>
+        <description>JL personal-blog</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 04 Dec 2025 15:30:00 +0800</pubDate>
+        <lastBuildDate>Thu, 04 Dec 2025 15:30:00 +0800</lastBuildDate>
+        <category>教程，hexo</category>
+        <item>
+            <guid isPermalink="true">http://example.com/2025/12/04/hexo/</guid>
+            <title>hexo教程</title>
+            <link>http://example.com/2025/12/04/hexo/</link>
+            <category>教程，hexo</category>
+            <pubDate>Thu, 04 Dec 2025 15:30:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;hexo&#34;&gt;&lt;a href=&#34;#hexo&#34; class=&#34;headerlink&#34; title=&#34;hexo&#34;&gt;&lt;/a&gt;hexo&lt;/h1&gt;&lt;h2 id=&#34;hexo上传文章&#34;&gt;&lt;a href=&#34;#hexo上传文章&#34; class=&#34;headerlink&#34; title=&#34;hexo上传文章&#34;&gt;&lt;/a&gt;hexo上传文章&lt;/h2&gt;&lt;p&gt;头部加 Front-matter，否则无法正常渲染！&lt;/p&gt;
+&lt;figure class=&#34;highlight yaml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 以下 2 项为必填（缺一不可）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;title:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;你的文章标题&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;date:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;2025-12-04 15:30:00&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 发布时间，格式固定为 YYYY-MM-DD HH:MM:SS&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 以下为可选项（按需添加）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;tags:&lt;/span&gt; [&lt;span class=&#34;string&#34;&gt;标签1&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;标签2&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;标签3&lt;/span&gt;]  &lt;span class=&#34;comment&#34;&gt;# 数组格式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;categories:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;分类名&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#单分类直接写；多分类用数组：[分类1, 子分类]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;description:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;文章简短描述（用于SEO/列表页展示）&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 字符串&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;author:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;作者名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;cover:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/images/cover.jpg&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 文章封面图路径，可选（图片放 source/images 下）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;top:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 是否置顶（部分主题支持），可选&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;permalink:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/custom-url/&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 自定义文章链接，可选&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;新建md-&amp;gt;放到\source_posts&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 生成并部署到github&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo g &amp;amp;&amp;amp; hexo d&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 启动本地预览服务器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;在浏览器输入localhost:4000&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2025/12/03/hello-world/</guid>
+            <title>Hello World</title>
+            <link>http://example.com/2025/12/03/hello-world/</link>
+            <pubDate>Wed, 03 Dec 2025 21:34:34 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;a href=&#34;https://hexo.io/&#34;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&#34;https://hexo.io/docs/&#34;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&#34;https://hexo.io/docs/troubleshooting.html&#34;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&#34;https://github.com/hexojs/hexo/issues&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/writing.html&#34;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/server.html&#34;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Generate-static-files&#34;&gt;&lt;a href=&#34;#Generate-static-files&#34; class=&#34;headerlink&#34; title=&#34;Generate static files&#34;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/generating.html&#34;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;a href=&#34;https://hexo.io/docs/one-command-deployment.html&#34;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

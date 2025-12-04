@@ -745,11 +745,11 @@ body.loaded #main .wrap,
 body.loaded #sidebar .panel.active {
   animation: slideUpBigIn 0.5s;
 }
-.slide-right-in,
-#tool.affix .player-info.show {
+.slide-right-in {
   animation: slideRightIn 0.3s;
 }
-.slide-left-in {
+.slide-left-in,
+#tool.affix .player-info.show {
   animation: slideLeftIn 0.3s;
 }
 .slide-down-in,
@@ -1546,7 +1546,7 @@ body {
 body {
   background: linear-gradient(to top, var(--body-bg-shadow) 0, var(--grey-1) 20%) no-repeat bottom;
   color: var(--text-color);
-  font-family: 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1em;
   line-height: 2;
   -webkit-font-smoothing: antialiased;
@@ -1577,7 +1577,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Mulish', 'Noto Serif SC', 'Noto Serif JP', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 1.25rem 0 0.9375rem;
@@ -1588,7 +1588,7 @@ h3.title,
 h4.title,
 h5.title,
 h6.title {
-  font-family: 'Mulish', 'Noto Serif JP', 'Noto Serif SC', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 a {
   border: none;
@@ -1668,8 +1668,8 @@ textarea {
 @font-face {
   font-family: 'ic';
   font-display: swap;
-  src: url("https://at.alicdn.com/t/c/font_4415496_59g1326wajd.eot");
-  src: url("https://at.alicdn.com/t/c/font_4415496_59g1326wajd.eot?#iefix") format('embedded-opentype'), url("https://at.alicdn.com/t/c/font_4415496_59g1326wajd.woff2") format('woff2'), url("https://at.alicdn.com/t/c/font_4415496_59g1326wajd.woff") format('woff'), url("https://at.alicdn.com/t/c/font_4415496_59g1326wajd.ttf") format('truetype'), url("https://at.alicdn.com/t/c/font_4415496_59g1326wajd.svg#ic") format('svg');
+  src: url("https://at.alicdn.com/t/c/font_.eot");
+  src: url("https://at.alicdn.com/t/c/font_.eot?#iefix") format('embedded-opentype'), url("https://at.alicdn.com/t/c/font_.woff2") format('woff2'), url("https://at.alicdn.com/t/c/font_.woff") format('woff'), url("https://at.alicdn.com/t/c/font_.ttf") format('truetype'), url("https://at.alicdn.com/t/c/font_.svg#ic") format('svg');
 }
 @font-face {
   font-family: 'jetbrains-mono';
@@ -1840,7 +1840,7 @@ textarea {
   position: relative;
   border-radius: 0.3125rem;
 }
-@media (max-width: 820px) {
+@media (max-width: ) {
   .pagination .prev,
   .pagination .next,
   .pagination .page-number,
@@ -1855,7 +1855,7 @@ textarea {
   display: inline-block;
   color: var(--grey-5);
 }
-@media (max-width: 820px) {
+@media (max-width: ) {
   .pagination {
     padding: 1.25rem 0.625rem;
   }
@@ -1981,7 +1981,6 @@ main >.inner {
   align-items: flex-start;
   display: flex;
   justify-content: space-between;
-  flex-direction: row-reverse;
 }
 @media (min-width: 1200px) {
   main >.inner {
@@ -2017,7 +2016,7 @@ main >.inner {
     padding: 0.625rem;
   }
 }
-@media (max-width: 820px) {
+@media (max-width: ) {
   #main .wrap {
     padding: 0.5rem;
   }
@@ -2282,7 +2281,7 @@ main >.inner {
   letter-spacing: 0.0625rem;
   text-align: center;
 }
-@media (max-width: 820px) {
+@media (max-width: ) {
   #nav .menu .item {
     display: none;
   }
@@ -2390,12 +2389,12 @@ main >.inner {
   align-items: center;
 }
 #brand .artboard {
-  font-family: 'Fredericka the Great', 'Mulish', -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 3.5em;
   line-height: 1.2;
 }
 #brand h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   letter-spacing: 0.125rem;
 }
 #brand .artboard + h1 {
@@ -2415,12 +2414,12 @@ main >.inner {
 #brand .meta .item+.item {
   margin-left: 0.625rem;
 }
-@media (min-width: 820px) and (max-width: 1043px) {
+@media (min-width: ) and (max-width: 1043px) {
   #brand .meta {
     font-size: 0.8125em;
   }
 }
-@media (max-width: 820px) {
+@media (max-width: ) {
   #brand {
     padding: 3rem 0.5rem 0;
   }
@@ -2436,12 +2435,12 @@ main >.inner {
 }
 @media (max-width: 413px) {
   #brand .artboard {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 #tool {
   position: fixed;
-  right: 1rem;
+  left: 1rem;
   top: 50vh;
   z-index: 9;
 }
@@ -2494,12 +2493,12 @@ main >.inner {
   display: none;
   bottom: 0;
   overflow: hidden;
-  right: 3.5rem;
+  left: 3.5rem;
   width: 50vw;
   z-index: 9;
   max-width: 25rem;
 }
-@media (max-width: 820px) {
+@media (max-width: ) {
   #tool .player-info {
     right: 2.5rem;
   }
@@ -2517,7 +2516,7 @@ main >.inner {
   box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
   background: var(--grey-1-a3);
   border-radius: 0.3125rem;
-  right: 0;
+  left: 0;
   bottom: 0;
 }
 #tool.affix .item {
@@ -2535,11 +2534,11 @@ main >.inner {
   display: block;
 }
 #tool.affix .player-info {
-  right: 2.5rem;
+  left: 2.5rem;
 }
 @media (min-width: 1200px) {
   #tool.affix .player-info {
-    right: 3.5rem;
+    left: 3.5rem;
   }
 }
 @media (max-width: 991px) {
@@ -2550,6 +2549,11 @@ main >.inner {
 }
 #tool.affix .player-info.show {
   display: block;
+}
+@media (max-width: 991px) {
+  #tool.affix .player-info.show {
+    animation: slideRightIn 0.3s;
+  }
 }
 #tool.affix .back-to-top {
   align-items: center;
@@ -2567,7 +2571,7 @@ main >.inner {
 }
 @media (min-width: 1200px) {
   #tool.affix {
-    right: 1rem;
+    left: 1rem;
     bottom: 1rem;
   }
 }
@@ -2588,7 +2592,7 @@ main >.inner {
   content-visibility: auto;
   contain-intrinsic-size: 100vw 15vh;
 }
-@media (max-width: 820px) {
+@media (max-width: ) {
   .waves {
     height: 10vh;
     contain-intrinsic-size: 100vw 10vh;
@@ -2906,17 +2910,11 @@ use.stop-animation {
   top: -10%;
   left: -10%;
 }
-.social .item.g::before {
-  background-color: thu;
+.social .item.::before {
+  background-color: ;
 }
-.social .item.g i {
-  color: thu;
-}
-.social .item.h::before {
-  background-color: #191717;
-}
-.social .item.h i {
-  color: #191717;
+.social .item. i {
+  color: ;
 }
 .social .item:focus i,
 .social .item:hover i {
@@ -2957,11 +2955,6 @@ use.stop-animation {
 #sidebar.affix #quick,
 #sidebar.on #quick {
   display: flex;
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape), screen and (min-width: 768px) and (max-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
-  #sidebar {
-    overflow: visible;
-  }
 }
 #sidebar .tab {
   position: absolute;
@@ -3125,7 +3118,7 @@ use.stop-animation {
   margin: 2rem auto 0.625rem;
   width: calc(100% - 0.625rem);
   position: relative;
-  padding-left: 16.25rem;
+  padding-right: 16.25rem;
 }
 @media (min-width: 1200px) {
   #footer .inner {
@@ -3165,7 +3158,7 @@ use.stop-animation {
   width: 100%;
 }
 .with-love {
-  color: #ffc0cb;
+  color: ;
   display: inline-block;
   margin: 0 0.3125rem 0 0.125rem;
 }
@@ -3228,6 +3221,7 @@ use.stop-animation {
 }
 #loading {
   background-color: var(--grey-1);
+  display: none;
 }
 .cat {
   position: relative;
@@ -3721,7 +3715,7 @@ use.stop-animation {
   width: 43.75rem;
   text-shadow: none;
 }
-@media (max-width: 820px) {
+@media (max-width: ) {
   #search >.inner {
     width: 100%;
   }
@@ -3978,7 +3972,7 @@ use.stop-animation {
   width: calc(50% - 2rem);
   padding: 1rem;
 }
-@media (max-width: 820px) {
+@media (max-width: ) {
   .widgets {
     flex-direction: column-reverse;
   }
